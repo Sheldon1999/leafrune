@@ -1,0 +1,11 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Installers belong in download/ (current version only) or in Releases;
+# stray copies elsewhere stay out of git.
+*.exe
+*.dmg
+*.msi
+!download/*.exe
