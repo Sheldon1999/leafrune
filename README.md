@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="download/Leafrune_0.9.2_x64-setup.exe"><strong>Download for Windows</strong></a>
+  <a href="https://github.com/Sheldon1999/leafrune/releases/download/v0.9.4/Leafrune_0.9.4_aarch64.dmg"><strong>Download for Mac</strong></a>
   ·
-  macOS coming soon
+  <a href="https://apps.microsoft.com/detail/9pd85b3k3t39"><strong>Get it for Windows</strong></a>
   ·
   <a href="CHANGELOG.md">What's new</a>
   ·
@@ -54,46 +54,61 @@ telemetry. After a one-time model download, Leafrune works fully offline.
 
 ## Download
 
-| System                   | Download                                                                                        |
-| ------------------------ | ----------------------------------------------------------------------------------------------- |
-| Windows 10 / 11 (64-bit) | **[Leafrune_0.9.2_x64-setup.exe](download/Leafrune_0.9.2_x64-setup.exe)** (Leafrune 0.9.2 Beta) |
-| macOS (Apple Silicon)    | **Coming soon**                                                                                 |
+| System                             | Download                                                                                                                                   |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| macOS (Apple silicon: M1 or later) | **[Leafrune_0.9.4_aarch64.dmg](https://github.com/Sheldon1999/leafrune/releases/download/v0.9.4/Leafrune_0.9.4_aarch64.dmg)** (0.9.4 Beta) |
+| Windows 10 / 11 (64-bit)           | **[Microsoft Store](https://apps.microsoft.com/detail/9pd85b3k3t39)** (0.9.3 Beta)                                                         |
 
-To check that your download is complete and unchanged, compare its SHA-256
-with [download/SHA256SUMS.txt](download/SHA256SUMS.txt). In PowerShell:
+Every Mac download is listed on the [Releases](https://github.com/Sheldon1999/leafrune/releases)
+page. To check that the DMG is complete and unchanged, compare its SHA-256 with
+the release's `SHA256SUMS.txt`. In Terminal:
 
-```powershell
-Get-FileHash .\Leafrune_0.9.2_x64-setup.exe -Algorithm SHA256
+```sh
+shasum -a 256 ~/Downloads/Leafrune_0.9.4_aarch64.dmg
 ```
 
 ## Installing
 
-The beta installer is **not code-signed yet**, so Windows will warn you the
-first time. This is expected.
+### macOS
+
+1. Open `Leafrune_0.9.4_aarch64.dmg` from your Downloads folder.
+2. In the window that appears, drag **Leafrune** onto the **Applications**
+   folder.
+3. Eject the Leafrune disk (the eject button next to it in the Finder
+   sidebar).
+4. Open **Leafrune** from your Applications folder.
+
+The beta is **not notarized by Apple yet**, so the first time macOS says it
+cannot verify Leafrune and does not open it. This is expected; allow it once:
+
+5. Click **Done** in that message.
+6. Open **System Settings ▸ Privacy & Security** and scroll down to
+   **Security**. Next to the message that Leafrune was blocked, click
+   **Open Anyway**.
+7. Click **Open Anyway** again and enter your password. Leafrune opens, and
+   from now on it opens normally.
+
+Leafrune can become your default PDF app: select any PDF in Finder, choose
+**File ▸ Get Info**, set **Open with** to **Leafrune**, then click
+**Change All…** to use it for every PDF.
 
 ### Windows
 
-1. Run `Leafrune_0.9.2_x64-setup.exe`.
-2. If Windows shows **"Windows protected your PC"**, click **More info**, then
-   **Run anyway**.
-3. Follow the installer. If your PC does not have Microsoft Edge WebView2 (most
-   Windows 10 and all Windows 11 PCs already do), the installer downloads it,
-   so keep the internet connected during setup.
+1. Open [Leafrune in the Microsoft Store](https://apps.microsoft.com/detail/9pd85b3k3t39)
+   and click **Get** (or **Install**).
+2. Open **Leafrune** from the Start menu. The Store keeps it up to date.
 
 Leafrune can become your default PDF app: right-click any PDF ▸ **Open with** ▸
 **Choose another app** ▸ **Leafrune** ▸ **Always**.
 
-### macOS
-
-Coming soon. Watch this repository (**Watch ▸ Custom ▸ Releases**) to hear
-when the Mac version is out.
-
 ## First launch
 
 - Leafrune opens straight away and you can start reading.
-- In the background it downloads its two AI models once (**about 531 MB**)
-  from Hugging Face. Nothing is shown unless you open the assistant, where you
-  can follow the progress.
+- In the background it downloads its two AI models once from Hugging Face
+  (**about 3.2 GB** on a Mac, **about 531 MB** on Windows). Nothing is shown
+  unless you open the assistant, where you can follow the progress.
+- On a Mac, the first time you open the assistant, macOS prepares the graphics
+  processor for it. This takes about 20 seconds, once.
 - A dropped connection is no problem: the download continues where it stopped,
   even after a restart, and every file is checked before use.
 - After that, Leafrune never needs the internet again.
@@ -103,7 +118,7 @@ when the Mac version is out.
 **Reading**
 
 - Open PDFs from the **Open…** button, by dragging them onto the window, from
-  the **Recent** list, or by double-clicking them in File Explorer.
+  the **Recent** list, or by double-clicking them in Finder or File Explorer.
 - Leafrune remembers where you were in every document and reopens the last one
   where you left off.
 - Zoom, fit to page or width, Ctrl+mouse wheel and touchpad pinch.
@@ -120,14 +135,16 @@ when the Mac version is out.
 
 - **Invert colors** for reading at night (pages only).
 - **Light, Dark or system theme**: View ▸ Theme.
-- **Full screen** with F11.
-- Native Windows menus with keyboard access (Alt), and your recent files when
-  you right-click Leafrune on the taskbar.
+- **Full screen** with F11 (⌃⌘F on a Mac).
+- On a Mac: the toolbar in the title bar, a translucent sidebar, your accent
+  color and the macOS menu bar.
+- On Windows: native menus with keyboard access (Alt), and your recent files
+  when you right-click Leafrune on the taskbar.
 
 ## The assistant
 
-Open it with the chat button in the toolbar, **Ctrl+/** or
-View ▸ Assistant.
+Open it with the chat button in the toolbar, **⌘/** on a Mac, **Ctrl+/** on
+Windows, or View ▸ Assistant.
 
 - **Ask in your own words.** The assistant finds the passages that answer
   your question and writes a short answer from them.
@@ -151,6 +168,9 @@ the next time, the assistant is ready at once.
 
 ## Keyboard shortcuts
 
+The table lists the Windows shortcuts. On a Mac, most use ⌘ instead of Ctrl,
+and the menus show every shortcut.
+
 | Action                           | Shortcut                                |
 | -------------------------------- | --------------------------------------- |
 | Open a PDF                       | Ctrl+O                                  |
@@ -171,18 +191,17 @@ the next time, the assistant is ready at once.
 
 ## System requirements
 
-|        | Windows                             |
-| ------ | ----------------------------------- |
-| System | Windows 10 or 11, 64-bit (x64)      |
-| Disk   | about 1 GB free (app and AI models) |
-| Memory | 8 GB recommended                    |
-
-The macOS version (Apple Silicon) is coming soon.
+|        | macOS                                 | Windows                                  |
+| ------ | ------------------------------------- | ---------------------------------------- |
+| System | Mac with Apple silicon (M1 or later)  | Windows 10 or 11, 64-bit (x64) with AVX2 |
+| Disk   | about 3.5 GB free (app and AI models) | about 1 GB free (app and AI models)      |
+| Memory | 8 GB recommended                      | 8 GB recommended                         |
 
 - Reading needs no more than an ordinary PDF viewer.
-- While the assistant answers, Leafrune uses about 1 GB more memory; it frees
-  it again two minutes after your last question.
-- The assistant runs on the processor (no graphics card needed).
+- While the assistant answers, Leafrune uses more memory (about 2 GB on a Mac,
+  1 GB on Windows); it frees it again two minutes after your last question.
+- On a Mac the assistant runs on the built-in graphics processor; on Windows it
+  runs on the processor (no graphics card needed).
 
 ## Privacy
 
@@ -204,16 +223,17 @@ Details, and how to delete everything Leafrune stores, are in
 - **Printing** is not available yet.
 - **Forms:** you can type into form fields, but the values are not saved yet.
 - **No annotations** (highlights, notes) yet.
-- **Windows only for now:** the macOS version is coming soon; Linux is not
-  supported in the beta.
+- **Mac:** Intel Macs are not supported yet. The beta is tested on macOS 27.
+- **Linux** is not supported in the beta.
 
 ## Feedback
 
 Leafrune is in beta, and your reports shape it.
 
 - **Something broken?** Open an [issue](https://github.com/Sheldon1999/leafrune/issues/new/choose)
-  with your Windows version, the Leafrune version (Help ▸ About Leafrune) and
-  the steps to see it.
+  with your macOS or Windows version, the Leafrune version (**Leafrune ▸ About
+  Leafrune** on a Mac, **Help ▸ About Leafrune** on Windows) and the steps to
+  see it.
 - **A wrong or odd answer?** Report it with the question, the answer and the
   page it should have used.
 - **Ideas** are welcome as issues too.
@@ -226,6 +246,8 @@ an issue.
 
 ## Uninstalling
 
+- **Mac:** quit Leafrune, then drag it from your Applications folder to the
+  Trash.
 - **Windows:** Settings ▸ Apps ▸ Installed apps ▸ Leafrune ▸ Uninstall.
 
 To also remove your recent files, reading positions, conversations and the AI
@@ -239,8 +261,10 @@ professional use. The beta is closed source; the source code is planned to be
 published under an open-source license with version 2.0. See
 [LICENSE.md](LICENSE.md).
 
-Leafrune is built on open-source software and openly licensed AI models
-(Qwen3-0.6B by the Qwen team, Alibaba Cloud; snowflake-arctic-embed-s by Snowflake). Thank you
-to their authors. Credits and licenses: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
-and [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt), also in the app
-under Help ▸ Open-Source Software.
+Leafrune is built on open-source software and openly licensed AI models:
+Gemma 4 E2B by Google DeepMind (Mac, 0.9.4), Qwen3-0.6B by the Qwen team,
+Alibaba Cloud (Windows, 0.9.3), and snowflake-arctic-embed-s by Snowflake
+(both). Thank you to their authors. Credits and licenses:
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and
+[THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt) (for the current version),
+also in the app under Help ▸ Open-Source Software.

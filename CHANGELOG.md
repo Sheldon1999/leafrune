@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.9.4 Beta — Leafrune for Mac (Apple silicon)
+
+Leafrune now runs on Macs with Apple silicon (M1 or later). Download the DMG
+and follow the steps in the [README](README.md#macos).
+
+**A Mac app**
+
+- The toolbar sits in the title bar; the sidebar is translucent (solid with
+  Reduce Transparency).
+- Your accent and highlight colors from System Settings.
+- The macOS menu bar, the system About panel (Leafrune ▸ About Leafrune) and
+  Help ▸ Report a Problem….
+- Find opens as a bar under the toolbar, as in Safari; password prompts open
+  as a sheet.
+- The window reopens at its last size and place.
+
+**Assistant**
+
+- Answers are written by Gemma 4 E2B (Google DeepMind) on the Mac's graphics
+  processor.
+- A **Report answer** button under each answer opens a filled-in report that
+  you can check and edit before sending.
+- The one-time AI model download is about 3.2 GB.
+
+**Known limitations**
+
+- Not notarized by Apple yet: macOS asks once (System Settings ▸ Privacy &
+  Security ▸ Open Anyway).
+- Intel Macs are not supported yet.
+- Same as on Windows: no text recognition for scanned PDFs, no printing, form
+  values are not saved, no annotations; the assistant works best with English
+  documents.
+
 ## 0.9.2 Beta — first public beta (Windows)
 
 The first public release of Leafrune: a private PDF reader with an AI assistant

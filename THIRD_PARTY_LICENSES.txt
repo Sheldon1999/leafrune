@@ -10,12 +10,12 @@ be present in the build you downloaded.
 AI models are downloaded on first launch, not included in the installer;
 see THIRD_PARTY_NOTICES.md.
 
-Components: 657. Distinct license texts: 326.
+Components: 653. Distinct license texts: 328.
 
 Components whose package contains no license file (license as declared
 by the package; the standard texts of MIT, Apache-2.0, MPL-2.0, BSD and
 Zlib appear in full elsewhere in this file):
-  - alloc-stdlib 0.2.4 (Rust crate) [BSD-3-Clause]
+  - alloc-stdlib 0.3.0 (Rust crate) [BSD-3-Clause]
   - block2 0.6.2 (Rust crate) [MIT]
   - defmt-parser 1.0.0 (Rust crate) [MIT OR Apache-2.0]
   - dispatch2 0.3.1 (Rust crate) [Zlib OR Apache-2.0 OR MIT]
@@ -28,6 +28,7 @@ Zlib appear in full elsewhere in this file):
   - libappindicator-sys 0.9.0 (Rust crate) [Apache-2.0 OR MIT]
   - llama-cpp-2 0.1.157 (Rust crate) [MIT OR Apache-2.0]
   - ndk 0.9.0 (Rust crate) [MIT OR Apache-2.0]
+  - ndk-context 0.1.1 (Rust crate) [MIT OR Apache-2.0]
   - ndk-sys 0.6.0+11769913 (Rust crate) [MIT OR Apache-2.0]
   - nom-language 0.1.0 (Rust crate) [MIT]
   - objc2 0.6.4 (Rust crate) [MIT]
@@ -51,20 +52,15 @@ Zlib appear in full elsewhere in this file):
   - r-efi 6.0.0 (Rust crate) [MIT OR Apache-2.0 OR LGPL-2.1-or-later]
   - rsqlite-vfs 0.1.1 (Rust crate) [MIT]
   - rustls-platform-verifier-android 0.2.0 (Rust crate) [MIT OR Apache-2.0]
-  - selectors 0.36.1 (Rust crate) [MPL-2.0]
+  - selectors 0.38.0 (Rust crate) [MPL-2.0]
   - sqlite-vec 0.1.9 (Rust crate) [MIT/Apache-2.0]
-  - tauri-plugin 2.6.3 (Rust crate) [Apache-2.0 OR MIT]
+  - tauri-plugin 2.7.1 (Rust crate) [Apache-2.0 OR MIT]
   - tract-extra 0.23.8 (Rust crate) [MIT OR Apache-2.0]
   - tract-transformers 0.23.8 (Rust crate) [MIT OR Apache-2.0]
-  - unic-char-property 0.9.0 (Rust crate) [MIT/Apache-2.0]
-  - unic-char-range 0.9.0 (Rust crate) [MIT/Apache-2.0]
-  - unic-common 0.9.0 (Rust crate) [MIT/Apache-2.0]
-  - unic-ucd-ident 0.9.0 (Rust crate) [MIT/Apache-2.0]
-  - unic-ucd-version 0.9.0 (Rust crate) [MIT/Apache-2.0]
   - valuable 0.1.1 (Rust crate) [MIT]
-  - webview2-com 0.38.2 (Rust crate) [MIT]
+  - webview2-com 0.39.1 (Rust crate) [MIT]
   - webview2-com-macros 0.8.1 (Rust crate) [MIT]
-  - webview2-com-sys 0.38.2 (Rust crate) [MIT]
+  - webview2-com-sys 0.39.1 (Rust crate) [MIT]
   - winapi-i686-pc-windows-gnu 0.4.0 (Rust crate) [MIT/Apache-2.0]
   - winapi-x86_64-pc-windows-gnu 0.4.0 (Rust crate) [MIT/Apache-2.0]
 
@@ -480,7 +476,7 @@ License text 4, used by:
   - heck 0.4.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - heck 0.5.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - hermit-abi 0.5.3 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - html5ever 0.38.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
+  - html5ever 0.39.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - httparse 1.10.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - hyper-rustls 0.27.7 (Rust crate) [Apache-2.0 OR ISC OR MIT] — LICENSE-APACHE
   - idna 1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
@@ -493,19 +489,19 @@ License text 4, used by:
   - jni 0.21.1 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
   - jobserver 0.1.34 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - js-sys 0.3.106 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - keyboard-types 0.7.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
+  - keyboard-types 0.8.3 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - lazy_static 1.5.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - libappindicator 0.9.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
   - linux-raw-sys 0.12.1 (Rust crate) [Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT] — LICENSE-APACHE
   - lock_api 0.4.14 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - log 0.4.34 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - maplit 1.0.2 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
-  - markup5ever 0.38.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
+  - markup5ever 0.39.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - matrixmultiply 0.3.11 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
   - memo-map 0.3.4 (Rust crate) [Apache-2.0] — LICENSE
   - mime 0.3.17 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - minijinja 2.24.0 (Rust crate) [Apache-2.0] — LICENSE
-  - muda 0.19.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
+  - muda 0.20.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
   - ndarray 0.17.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - num-bigint 0.4.8 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - num-complex 0.4.6 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
@@ -567,7 +563,7 @@ License text 4, used by:
   - tract-nnef 0.23.8 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - tract-onnx 0.23.8 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - tract-onnx-opl 0.23.8 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - tray-icon 0.24.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
+  - tray-icon 0.25.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - unicode-normalization-alignments 0.1.12 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
   - unicode-segmentation 1.13.3 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - url 2.5.8 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
@@ -583,9 +579,9 @@ License text 4, used by:
   - wasm-bindgen-shared 0.2.129 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - web-sys 0.3.106 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - web_atoms 0.2.6 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - window-vibrancy 0.6.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
+  - window-vibrancy 0.8.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
   - wit-bindgen 0.57.1 (Rust crate) [Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT] — LICENSE-APACHE
-  - wry 0.55.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
+  - wry 0.57.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
   - xattr 1.6.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
 ------------------------------------------------------------------------
 
@@ -918,9 +914,9 @@ For more information, please refer to <http://unlicense.org/>
 
 ------------------------------------------------------------------------
 License text 9, used by:
-  - alloc-no-stdlib 2.0.4 (Rust crate) [BSD-3-Clause] — LICENSE
-  - brotli 8.0.4 (Rust crate) [BSD-3-Clause AND MIT] — LICENSE.BSD-3-Clause
-  - brotli-decompressor 5.0.3 (Rust crate) [BSD-3-Clause/MIT] — LICENSE
+  - alloc-no-stdlib 3.0.0 (Rust crate) [BSD-3-Clause] — LICENSE
+  - brotli 9.0.0 (Rust crate) [BSD-3-Clause AND MIT] — LICENSE.BSD-3-Clause
+  - brotli-decompressor 6.0.1 (Rust crate) [BSD-3-Clause/MIT] — LICENSE
 ------------------------------------------------------------------------
 
 Copyright (c) 2016 Dropbox, Inc.
@@ -2976,7 +2972,7 @@ Apache License
 
 ------------------------------------------------------------------------
 License text 31, used by:
-  - brotli 8.0.4 (Rust crate) [BSD-3-Clause AND MIT] — LICENSE.MIT
+  - brotli 9.0.0 (Rust crate) [BSD-3-Clause AND MIT] — LICENSE.MIT
 ------------------------------------------------------------------------
 
 Copyright (c) 2009, 2010, 2013-2016 by the Brotli Authors.
@@ -3189,7 +3185,7 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 38, used by:
-  - cargo_toml 0.22.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE
+  - cargo_toml 1.0.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE
 ------------------------------------------------------------------------
 
 © Kornel Lesiński
@@ -3930,7 +3926,7 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 43, used by:
-  - cfb 0.7.3 (Rust crate) [MIT] — LICENSE
+  - cfb 0.14.0 (Rust crate) [MIT] — LICENSE
 ------------------------------------------------------------------------
 
 MIT License
@@ -4972,14 +4968,11 @@ DEALINGS IN THE SOFTWARE.
 ------------------------------------------------------------------------
 License text 59, used by:
   - crc32fast 1.5.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - ctor 0.8.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
-  - ctor-proc-macro 0.0.7 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
+  - ctor 1.0.13 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
   - derive_builder 0.20.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - derive_builder_core 0.20.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - derive_builder_macro 0.20.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - dpi 0.1.2 (Rust crate) [Apache-2.0 AND MIT] — LICENSE
-  - dtor 0.3.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
-  - dtor-proc-macro 0.0.6 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE
   - fallible-iterator 0.3.0 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
   - fallible-streaming-iterator 0.1.9 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
   - float-ord 0.3.2 (Rust crate) [MIT / Apache-2.0] — LICENSE-APACHE
@@ -4989,16 +4982,14 @@ License text 59, used by:
   - hex 0.4.3 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - jni-sys 0.3.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - jni-sys 0.4.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - json-patch 3.0.1 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
+  - json-patch 4.2.0 (Rust crate) [MIT/Apache-2.0] — LICENSE-APACHE
   - rustfft 6.4.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - serde_spanned 0.6.9 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - serde_spanned 1.1.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - strength_reduce 0.2.4 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - tao 0.35.3 (Rust crate) [Apache-2.0] — LICENSE
+  - tao 0.37.1 (Rust crate) [Apache-2.0] — LICENSE
   - toml 0.8.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - toml 0.9.12+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - toml 1.1.6+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
-  - toml_datetime 0.7.5+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - toml_datetime 1.1.1+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - toml_edit 0.19.15 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - toml_edit 0.20.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
@@ -5933,8 +5924,8 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 65, used by:
-  - cssparser 0.36.0 (Rust crate) [MPL-2.0] — LICENSE
-  - cssparser-macros 0.6.1 (Rust crate) [MPL-2.0] — LICENSE
+  - cssparser 0.37.0 (Rust crate) [MPL-2.0] — LICENSE
+  - cssparser-macros 0.7.1 (Rust crate) [MPL-2.0] — LICENSE
 ------------------------------------------------------------------------
 
 Mozilla Public License Version 2.0
@@ -6313,10 +6304,7 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 
 ------------------------------------------------------------------------
 License text 66, used by:
-  - ctor 0.8.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
-  - ctor-proc-macro 0.0.7 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
-  - dtor 0.3.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
-  - dtor-proc-macro 0.0.6 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - ctor 1.0.13 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
   - tinyvec 1.13.3 (Rust crate) [Zlib OR Apache-2.0 OR MIT] — LICENSE-MIT.md
 ------------------------------------------------------------------------
 
@@ -7004,7 +6992,7 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 78, used by:
-  - dirs 6.0.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
+  - dirs 7.0.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - dirs-sys 0.5.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
 ------------------------------------------------------------------------
 
@@ -7185,7 +7173,7 @@ TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
 ------------------------------------------------------------------------
 License text 79, used by:
-  - dirs 6.0.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
+  - dirs 7.0.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - dirs-sys 0.5.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
 ------------------------------------------------------------------------
 
@@ -7211,7 +7199,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 80, used by:
-  - dom_query 0.27.0 (Rust crate) [MIT] — LICENSE
+  - dom_query 0.28.0 (Rust crate) [MIT] — LICENSE
 ------------------------------------------------------------------------
 
 MIT License
@@ -8367,7 +8355,7 @@ THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 100, used by:
-  - @tauri-apps/api 2.11.1 (npm package) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
+  - @tauri-apps/api 2.12.3 (npm package) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
   - fdeflate 0.3.7 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - field-offset 0.3.6 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
   - half 2.7.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
@@ -8381,17 +8369,17 @@ License text 100, used by:
   - raw-window-handle 0.6.2 (Rust crate) [MIT OR Apache-2.0 OR Zlib] — LICENSE-APACHE.md
   - simdutf8 0.1.5 (Rust crate) [MIT OR Apache-2.0] — LICENSE-Apache
   - sync_wrapper 1.0.2 (Rust crate) [Apache-2.0] — LICENSE
-  - tauri 2.11.6 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-build 2.6.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-codegen 2.6.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-macros 2.6.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-plugin-dialog 2.7.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-plugin-fs 2.5.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-plugin-opener 2.5.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-plugin-single-instance 2.4.5 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-runtime 2.11.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-runtime-wry 2.11.4 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
-  - tauri-utils 2.9.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
+  - tauri 2.12.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
+  - tauri-build 2.7.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
+  - tauri-codegen 2.7.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
+  - tauri-macros 2.7.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
+  - tauri-plugin-dialog 2.8.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
+  - tauri-plugin-fs 2.7.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
+  - tauri-plugin-opener 2.7.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
+  - tauri-plugin-single-instance 2.5.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_APACHE-2.0
+  - tauri-runtime 2.12.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
+  - tauri-runtime-wry 2.12.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
+  - tauri-utils 2.10.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-APACHE-2.0
   - time 0.3.55 (Rust crate) [MIT OR Apache-2.0] — LICENSE-Apache
   - time-core 0.1.9 (Rust crate) [MIT OR Apache-2.0] — LICENSE-Apache
   - time-macros 0.2.32 (Rust crate) [MIT OR Apache-2.0] — LICENSE-Apache
@@ -9570,8 +9558,8 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 122, used by:
-  - html5ever 0.38.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
-  - markup5ever 0.38.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
+  - html5ever 0.39.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
+  - markup5ever 0.39.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - web_atoms 0.2.6 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
 ------------------------------------------------------------------------
 
@@ -10451,7 +10439,7 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 139, used by:
-  - infer 0.19.0 (Rust crate) [MIT] — LICENSE
+  - infer 0.22.0 (Rust crate) [MIT] — LICENSE
 ------------------------------------------------------------------------
 
 MIT License
@@ -10836,7 +10824,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 147, used by:
-  - json-patch 3.0.1 (Rust crate) [MIT/Apache-2.0] — LICENSE-MIT
+  - json-patch 4.2.0 (Rust crate) [MIT/Apache-2.0] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 MIT License
@@ -10863,7 +10851,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 148, used by:
-  - jsonptr 0.6.3 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
+  - jsonptr 0.7.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
 ------------------------------------------------------------------------
 
 Apache License
@@ -11070,7 +11058,7 @@ limitations under the License.
 
 ------------------------------------------------------------------------
 License text 149, used by:
-  - jsonptr 0.6.3 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
+  - jsonptr 0.7.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 MIT License
@@ -11097,7 +11085,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 150, used by:
-  - keyboard-types 0.7.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
+  - keyboard-types 0.8.3 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 Copyright (c) 2017 Pyfisch
@@ -12681,8 +12669,8 @@ THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 178, used by:
-  - muda 0.19.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
-  - tray-icon 0.24.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
+  - muda 0.20.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tray-icon 0.25.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 MIT License
@@ -12709,7 +12697,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 179, used by:
-  - muda 0.19.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
+  - muda 0.20.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
 ------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -15934,9 +15922,7 @@ License text 232, used by:
   - serde_spanned 0.6.9 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - serde_spanned 1.1.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - toml 0.8.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
-  - toml 0.9.12+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - toml 1.1.6+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
-  - toml_datetime 0.7.5+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - toml_datetime 1.1.1+spec-1.1.0 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - toml_edit 0.19.15 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
   - toml_edit 0.20.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
@@ -16638,7 +16624,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
 License text 251, used by:
-  - swift-rs 1.0.8 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
+  - swift-rs 1.0.9 (Rust crate) [MIT OR Apache-2.0] — LICENSE-APACHE
 ------------------------------------------------------------------------
 
 Apache License
@@ -16845,7 +16831,7 @@ Apache License
 
 ------------------------------------------------------------------------
 License text 252, used by:
-  - swift-rs 1.0.8 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
+  - swift-rs 1.0.9 (Rust crate) [MIT OR Apache-2.0] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 Copyright (c) 2023 The swift-rs Developers
@@ -16915,7 +16901,7 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 255, used by:
-  - tao 0.35.3 (Rust crate) [Apache-2.0] — LICENSE.spdx
+  - tao 0.37.1 (Rust crate) [Apache-2.0] — LICENSE.spdx
 ------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -17022,17 +17008,17 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 259, used by:
-  - @tauri-apps/api 2.11.1 (npm package) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri 2.11.6 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-build 2.6.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-codegen 2.6.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-macros 2.6.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-plugin-dialog 2.7.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-plugin-fs 2.5.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-plugin-opener 2.5.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-runtime 2.11.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-runtime-wry 2.11.4 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
-  - tauri-utils 2.9.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
+  - @tauri-apps/api 2.12.3 (npm package) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tauri 2.12.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tauri-build 2.7.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tauri-codegen 2.7.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tauri-macros 2.7.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tauri-plugin-dialog 2.8.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
+  - tauri-plugin-fs 2.7.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
+  - tauri-plugin-opener 2.7.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
+  - tauri-runtime 2.12.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tauri-runtime-wry 2.12.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - tauri-utils 2.10.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 MIT License
@@ -17059,11 +17045,11 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 260, used by:
-  - @tauri-apps/plugin-dialog 2.7.3 (npm package) [MIT OR Apache-2.0] — LICENSE.spdx
-  - tauri-plugin-dialog 2.7.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
-  - tauri-plugin-fs 2.5.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
-  - tauri-plugin-opener 2.5.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
-  - tauri-plugin-single-instance 2.4.5 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
+  - @tauri-apps/plugin-dialog 2.8.2 (npm package) [MIT OR Apache-2.0] — LICENSE.spdx
+  - tauri-plugin-dialog 2.8.2 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
+  - tauri-plugin-fs 2.7.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
+  - tauri-plugin-opener 2.7.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
+  - tauri-plugin-single-instance 2.5.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
 ------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -17089,7 +17075,7 @@ Creator: Person: Daniel Thompson-Yvetot
 
 ------------------------------------------------------------------------
 License text 261, used by:
-  - tauri-plugin-single-instance 2.4.5 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
+  - tauri-plugin-single-instance 2.5.3 (Rust crate) [Apache-2.0 OR MIT] — LICENSE_MIT
 ------------------------------------------------------------------------
 
 MIT License
@@ -17865,7 +17851,7 @@ DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 275, used by:
-  - tray-icon 0.24.2 (Rust crate) [MIT OR Apache-2.0] — LICENSE.spdx
+  - tray-icon 0.25.1 (Rust crate) [MIT OR Apache-2.0] — LICENSE.spdx
 ------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -18287,7 +18273,7 @@ License text 284, used by:
 
 ------------------------------------------------------------------------
 License text 285, used by:
-  - urlpattern 0.3.0 (Rust crate) [MIT] — LICENSE
+  - urlpattern 0.6.0 (Rust crate) [MIT] — LICENSE
 ------------------------------------------------------------------------
 
 MIT License
@@ -18904,7 +18890,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 299, used by:
-  - window-vibrancy 0.6.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - window-vibrancy 0.8.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 MIT License
@@ -18931,7 +18917,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 300, used by:
-  - window-vibrancy 0.6.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
+  - window-vibrancy 0.8.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
 ------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -18957,15 +18943,19 @@ Creator: Person: Daniel Thompson-Yvetot
 ------------------------------------------------------------------------
 License text 301, used by:
   - windows 0.61.3 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
+  - windows 0.62.2 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-collections 0.2.0 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
+  - windows-collections 0.3.2 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-core 0.61.2 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-core 0.62.2 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-future 0.2.1 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
+  - windows-future 0.3.2 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-implement 0.60.2 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-interface 0.59.3 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-link 0.1.3 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-link 0.2.1 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-numerics 0.2.0 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
+  - windows-numerics 0.3.1 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-registry 0.6.1 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-result 0.3.4 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-result 0.4.1 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
@@ -18980,6 +18970,7 @@ License text 301, used by:
   - windows-targets 0.52.6 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-targets 0.53.5 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-threading 0.1.0 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
+  - windows-threading 0.2.1 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows-version 0.1.7 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows_aarch64_gnullvm 0.42.2 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
   - windows_aarch64_gnullvm 0.52.6 (Rust crate) [MIT OR Apache-2.0] — license-apache-2.0
@@ -19211,15 +19202,19 @@ Apache License
 ------------------------------------------------------------------------
 License text 302, used by:
   - windows 0.61.3 (Rust crate) [MIT OR Apache-2.0] — license-mit
+  - windows 0.62.2 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-collections 0.2.0 (Rust crate) [MIT OR Apache-2.0] — license-mit
+  - windows-collections 0.3.2 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-core 0.61.2 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-core 0.62.2 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-future 0.2.1 (Rust crate) [MIT OR Apache-2.0] — license-mit
+  - windows-future 0.3.2 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-implement 0.60.2 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-interface 0.59.3 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-link 0.1.3 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-link 0.2.1 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-numerics 0.2.0 (Rust crate) [MIT OR Apache-2.0] — license-mit
+  - windows-numerics 0.3.1 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-registry 0.6.1 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-result 0.3.4 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-result 0.4.1 (Rust crate) [MIT OR Apache-2.0] — license-mit
@@ -19234,6 +19229,7 @@ License text 302, used by:
   - windows-targets 0.52.6 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-targets 0.53.5 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-threading 0.1.0 (Rust crate) [MIT OR Apache-2.0] — license-mit
+  - windows-threading 0.2.1 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows-version 0.1.7 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows_aarch64_gnullvm 0.42.2 (Rust crate) [MIT OR Apache-2.0] — license-mit
   - windows_aarch64_gnullvm 0.52.6 (Rust crate) [MIT OR Apache-2.0] — license-mit
@@ -19285,7 +19281,6 @@ MIT License
 ------------------------------------------------------------------------
 License text 303, used by:
   - winnow 0.5.40 (Rust crate) [MIT] — LICENSE-MIT
-  - winnow 0.7.15 (Rust crate) [MIT] — LICENSE-MIT
   - winnow 1.0.4 (Rust crate) [MIT] — LICENSE-MIT
 ------------------------------------------------------------------------
 
@@ -19335,7 +19330,7 @@ THE SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 305, used by:
-  - wry 0.55.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
+  - wry 0.57.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE-MIT
 ------------------------------------------------------------------------
 
 MIT License
@@ -19362,7 +19357,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 License text 306, used by:
-  - wry 0.55.1 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
+  - wry 0.57.0 (Rust crate) [Apache-2.0 OR MIT] — LICENSE.spdx
 ------------------------------------------------------------------------
 
 SPDXVersion: SPDX-2.1
@@ -19818,6 +19813,32 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ------------------------------------------------------------------------
 License text 317, used by:
+  - @tauri-apps/api 2.12.3 (npm package) [Apache-2.0 OR MIT] — LICENSE.spdx
+------------------------------------------------------------------------
+
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+PackageName: tauri
+DataFormat: SPDXRef-1
+PackageSupplier: Organization: The Tauri Programme in the Commons Conservancy
+PackageHomePage: https://tauri.app
+PackageLicenseDeclared: Apache-2.0
+PackageLicenseDeclared: MIT
+PackageCopyrightText: 2019-2025, The Tauri Programme in the Commons Conservancy
+PackageSummary: <text>Tauri is a rust project that enables developers to make secure
+and small desktop applications using a web frontend.
+                </text>
+PackageComment: <text>The package includes the following libraries; see
+Relationship information.
+                </text>
+Created: 2019-05-20T09:00:00Z
+PackageDownloadLocation: git://github.com/tauri-apps/tauri
+PackageDownloadLocation: git+https://github.com/tauri-apps/tauri.git
+PackageDownloadLocation: git+ssh://github.com/tauri-apps/tauri.git
+Creator: Person: Daniel Thompson-Yvetot
+
+------------------------------------------------------------------------
+License text 318, used by:
   - pdf.js standard fonts: Foxit fonts (from PDFium) [BSD-3-Clause] — LICENSE_FOXIT
 ------------------------------------------------------------------------
 
@@ -19850,7 +19871,7 @@ License text 317, used by:
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
-License text 318, used by:
+License text 319, used by:
   - pdf.js standard fonts: Liberation Sans [GPL-2.0 with font exception] — LICENSE_LIBERATION
 ------------------------------------------------------------------------
 
@@ -20219,7 +20240,7 @@ library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.
 
 ------------------------------------------------------------------------
-License text 319, used by:
+License text 320, used by:
   - pdf.js CMaps (Adobe) [BSD-3-Clause] — LICENSE
 ------------------------------------------------------------------------
 
@@ -20261,7 +20282,7 @@ License text 319, used by:
 %%Copyright: -----------------------------------------------------------
 
 ------------------------------------------------------------------------
-License text 320, used by:
+License text 321, used by:
   - pdf.js ICC profile [CC0-1.0] — LICENSE
 ------------------------------------------------------------------------
 
@@ -20383,7 +20404,7 @@ For more information, please see
 http://creativecommons.org/publicdomain/zero/1.0/
 
 ------------------------------------------------------------------------
-License text 321, used by:
+License text 322, used by:
   - pdf.js JBIG2 decoder (PDFium) [BSD-3-Clause] — LICENSE_JBIG2
 ------------------------------------------------------------------------
 
@@ -20585,7 +20606,7 @@ License text 321, used by:
    limitations under the License.
 
 ------------------------------------------------------------------------
-License text 322, used by:
+License text 323, used by:
   - pdf.js JBIG2 decoder (PDFium) [BSD-3-Clause] — LICENSE_PDFJS_JBIG2
 ------------------------------------------------------------------------
 
@@ -20604,7 +20625,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ------------------------------------------------------------------------
-License text 323, used by:
+License text 324, used by:
   - pdf.js OpenJPEG decoder [BSD-2-Clause] — LICENSE_OPENJPEG
 ------------------------------------------------------------------------
 
@@ -20649,7 +20670,7 @@ License text 323, used by:
  */
 
 ------------------------------------------------------------------------
-License text 324, used by:
+License text 325, used by:
   - pdf.js OpenJPEG decoder [BSD-2-Clause] — LICENSE_PDFJS_OPENJPEG
 ------------------------------------------------------------------------
 
@@ -20677,7 +20698,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
-License text 325, used by:
+License text 326, used by:
   - pdf.js qcms colour management [MIT] — LICENSE_QCMS
 ------------------------------------------------------------------------
 
@@ -20704,13 +20725,40 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
-License text 326, used by:
-  - Fluent UI System Icons 1.1.343 (icons in src/lib/Icon.svelte) [MIT] — fluentui-system-icons.LICENSE
+License text 327, used by:
+  - Fluent UI System Icons 1.1.343 (icons in src/platform/windows/icons.js) [MIT] — fluentui-system-icons.LICENSE
 ------------------------------------------------------------------------
 
 MIT License
 
 Copyright (c) 2020 Microsoft Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+License text 328, used by:
+  - Phosphor Icons 2.1.1 (icons in src/platform/macos/icons.js) [MIT] — phosphor-icons-core.LICENSE
+------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2023 Phosphor Icons
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

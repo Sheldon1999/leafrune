@@ -13,10 +13,10 @@ The models are **not included in the installer**. Leafrune downloads them once,
 on first launch, from Hugging Face, at the exact revisions listed here, and
 checks each file's SHA-256 hash.
 
-| Model                                                                                 | Used for                                    | Author                   | File used                                                                                                                                                   | License                                                                 |
-| ------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| [Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)                                  | Writing answers                             | Qwen team, Alibaba Cloud | [unsloth/Qwen3-0.6B-GGUF](https://huggingface.co/unsloth/Qwen3-0.6B-GGUF) `Qwen3-0.6B-Q4_K_M.gguf`, revision `50968a44` (quantization by Unsloth)           | [Apache-2.0](https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE)  |
-| [snowflake-arctic-embed-s](https://huggingface.co/Snowflake/snowflake-arctic-embed-s) | Finding the passages that answer a question | Snowflake                | [Snowflake/snowflake-arctic-embed-s](https://huggingface.co/Snowflake/snowflake-arctic-embed-s) `onnx/model.onnx` and `tokenizer.json`, revision `e596f507` | [Apache-2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-s) |
+| Model                                                                                 | Used for                                    | Author          | File used                                                                                                                                                     | License                                                                 |
+| ------------------------------------------------------------------------------------- | ------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [Gemma 4 E2B](https://huggingface.co/google/gemma-4-E2B-it)                           | Writing answers                             | Google DeepMind | [unsloth/gemma-4-E2B-it-GGUF](https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF) `gemma-4-E2B-it-Q4_K_M.gguf`, revision `0314792d` (quantization by Unsloth) | [Apache-2.0](https://huggingface.co/google/gemma-4-E2B-it)              |
+| [snowflake-arctic-embed-s](https://huggingface.co/Snowflake/snowflake-arctic-embed-s) | Finding the passages that answer a question | Snowflake       | [Snowflake/snowflake-arctic-embed-s](https://huggingface.co/Snowflake/snowflake-arctic-embed-s) `onnx/model.onnx` and `tokenizer.json`, revision `e596f507`   | [Apache-2.0](https://huggingface.co/Snowflake/snowflake-arctic-embed-s) |
 
 Leafrune does not modify the models. Answers generated with them are produced
 on your device and are not reviewed by the model authors.
@@ -25,8 +25,8 @@ on your device and are not reviewed by the model authors.
 
 | Component                                                   | Version                | License                | Source                                                                           |
 | ----------------------------------------------------------- | ---------------------- | ---------------------- | -------------------------------------------------------------------------------- |
-| Tauri (app framework), wry, tao                             | 2.11.6, 0.55.1, 0.35.3 | Apache-2.0 / MIT       | https://github.com/tauri-apps/tauri                                              |
-| Tauri plugins: dialog, single-instance, opener              | 2.7.3, 2.4.5, 2.5.3    | Apache-2.0 / MIT       | https://github.com/tauri-apps/plugins-workspace                                  |
+| Tauri (app framework), wry, tao                             | 2.12.3, 0.57.0, 0.37.1 | Apache-2.0 / MIT       | https://github.com/tauri-apps/tauri                                              |
+| Tauri plugins: dialog, single-instance, opener              | 2.8.2, 2.5.3, 2.7.1    | Apache-2.0 / MIT       | https://github.com/tauri-apps/plugins-workspace                                  |
 | PDF.js (PDF rendering, text layer, find)                    | 6.3.289                | Apache-2.0             | https://github.com/mozilla/pdf.js                                                |
 | Svelte (user interface runtime)                             | 5.57.1                 | MIT                    | https://github.com/sveltejs/svelte                                               |
 | llama.cpp / ggml (runs the language model), via llama-cpp-2 | crate 0.1.157          | MIT                    | https://github.com/ggml-org/llama.cpp, https://github.com/utilityai/llama-cpp-rs |
@@ -38,6 +38,7 @@ on your device and are not reviewed by the model authors.
 | mimalloc (memory allocator)                                 | 0.1.52                 | MIT                    | https://github.com/microsoft/mimalloc                                            |
 | reqwest, rustls (model download over HTTPS)                 | 0.13.5, 0.23.37        | Apache-2.0 / ISC / MIT | https://github.com/seanmonstar/reqwest, https://github.com/rustls/rustls         |
 | Fluent UI System Icons (Windows user-interface icons)       | 1.1.343                | MIT                    | https://github.com/microsoft/fluentui-system-icons                               |
+| Phosphor Icons (macOS user-interface icons)                 | 2.1.1                  | MIT                    | https://github.com/phosphor-icons/core                                           |
 
 ## Files bundled with PDF.js
 
@@ -69,5 +70,5 @@ it under MIT / Apache-2.0.
 ## Leafrune's own assets
 
 The Leafrune name, logo and user-interface icons (except the Fluent UI System
-Icons used on Windows, listed above) are original work by the Leafrune author
-and are not third-party material.
+Icons used on Windows and the Phosphor Icons used on macOS, listed above) are
+original work by the Leafrune author and are not third-party material.
