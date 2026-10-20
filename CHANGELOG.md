@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.9.5 Beta — fill in and save forms (Mac)
+
+**Forms**
+
+- Fill in text fields, checkboxes, radio buttons and drop-down lists, then
+  **File ▸ Save** (⌘S) or **File ▸ Save a Copy…** (⇧⌘S). The values are
+  written into the PDF, so other PDF apps show them too; password-protected
+  forms stay protected.
+- Unsaved changes show in the title; closing, opening another PDF or quitting
+  asks whether to save them.
+- PDFs that do not allow filling in show read-only fields.
+- The first time you open a fillable form, a short note explains that the
+  assistant sees your values once you save (you can turn it off).
+
+**Assistant**
+
+- Reads form fields: ask about one field (_"What did I put as my last
+  name?"_) or the whole form (_"What's still empty?"_, _"Is the form
+  complete?"_). Answers link to the field and highlight it.
+- After a save, only the changed fields are read again.
+
+**Known limitations**
+
+- Form scripts (calculated fields, checks) do not run; signature fields and
+  XFA-only forms cannot be filled in.
+- Still no printing.
+
 ## 0.9.4 Beta — Leafrune for Mac (Apple silicon)
 
 Leafrune now runs on Macs with Apple silicon (M1 or later). Download the DMG

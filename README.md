@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Sheldon1999/leafrune/releases/download/v0.9.4/Leafrune_0.9.4_aarch64.dmg"><strong>Download for Mac</strong></a>
+  <a href="https://github.com/Sheldon1999/leafrune/releases/download/v0.9.5/Leafrune_0.9.5_aarch64.dmg"><strong>Download for Mac</strong></a>
   ·
   <a href="https://apps.microsoft.com/detail/9pd85b3k3t39"><strong>Get it for Windows</strong></a>
   ·
@@ -56,7 +56,7 @@ telemetry. After a one-time model download, Leafrune works fully offline.
 
 | System                             | Download                                                                                                                                   |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| macOS (Apple silicon: M1 or later) | **[Leafrune_0.9.4_aarch64.dmg](https://github.com/Sheldon1999/leafrune/releases/download/v0.9.4/Leafrune_0.9.4_aarch64.dmg)** (0.9.4 Beta) |
+| macOS (Apple silicon: M1 or later) | **[Leafrune_0.9.5_aarch64.dmg](https://github.com/Sheldon1999/leafrune/releases/download/v0.9.5/Leafrune_0.9.5_aarch64.dmg)** (0.9.5 Beta) |
 | Windows 10 / 11 (64-bit)           | **[Microsoft Store](https://apps.microsoft.com/detail/9pd85b3k3t39)** (0.9.3 Beta)                                                         |
 
 Every Mac download is listed on the [Releases](https://github.com/Sheldon1999/leafrune/releases)
@@ -64,14 +64,14 @@ page. To check that the DMG is complete and unchanged, compare its SHA-256 with
 the release's `SHA256SUMS.txt`. In Terminal:
 
 ```sh
-shasum -a 256 ~/Downloads/Leafrune_0.9.4_aarch64.dmg
+shasum -a 256 ~/Downloads/Leafrune_0.9.5_aarch64.dmg
 ```
 
 ## Installing
 
 ### macOS
 
-1. Open `Leafrune_0.9.4_aarch64.dmg` from your Downloads folder.
+1. Open `Leafrune_0.9.5_aarch64.dmg` from your Downloads folder.
 2. In the window that appears, drag **Leafrune** onto the **Applications**
    folder.
 3. Eject the Leafrune disk (the eject button next to it in the Finder
@@ -131,6 +131,16 @@ Leafrune can become your default PDF app: right-click any PDF ▸ **Open with** 
 - Links in a PDF open in your web browser or mail app.
 - Copy text, or right-click a page to **Copy Page as Image**.
 
+**Forms** (Mac, 0.9.5)
+
+- Fill in text fields, checkboxes, radio buttons and drop-down lists.
+- **Save** (⌘S) writes the values into the same PDF; **Save a Copy…** (⇧⌘S)
+  writes them to a new file and leaves the original as it was. Other PDF apps
+  show the saved values.
+- Unsaved changes show in the title. Closing, opening another PDF or quitting
+  asks whether to save them.
+- PDFs that do not allow filling in show their fields read-only.
+
 **Comfort**
 
 - **Invert colors** for reading at night (pages only).
@@ -157,6 +167,9 @@ Windows, or View ▸ Assistant.
 - **It shows what it is doing**: loading the model, searching, reading passages.
 - **Each document keeps its own conversation.** Copy an answer with the copy
   button; clear the conversation with the trash button.
+- **It reads filled-in forms** (Mac, 0.9.5). Ask _"What did I put as my last
+  name?"_ or _"What's still empty?"_; the answer links to the field. It sees
+  the values you have saved, so save (⌘S) after filling in.
 
 When you open a PDF for the first time, Leafrune reads its text in the
 background (a long book takes a minute or two). You can keep reading meanwhile;
@@ -221,7 +234,10 @@ Details, and how to delete everything Leafrune stores, are in
 - **The assistant works best in English.** Its search model was trained mainly
   on English text.
 - **Printing** is not available yet.
-- **Forms:** you can type into form fields, but the values are not saved yet.
+- **Forms:** on Windows (0.9.3) you can type into form fields, but the values
+  are not saved yet. On a Mac, forms that run their own scripts (calculated
+  totals, checks) are filled in without them, signature fields are not
+  supported, and XFA forms can only be viewed.
 - **No annotations** (highlights, notes) yet.
 - **Mac:** Intel Macs are not supported yet. The beta is tested on macOS 27.
 - **Linux** is not supported in the beta.
@@ -262,7 +278,7 @@ published under an open-source license with version 2.0. See
 [LICENSE.md](LICENSE.md).
 
 Leafrune is built on open-source software and openly licensed AI models:
-Gemma 4 E2B by Google DeepMind (Mac, 0.9.4), Qwen3-0.6B by the Qwen team,
+Gemma 4 E2B by Google DeepMind (Mac, 0.9.5), Qwen3-0.6B by the Qwen team,
 Alibaba Cloud (Windows, 0.9.3), and snowflake-arctic-embed-s by Snowflake
 (both). Thank you to their authors. Credits and licenses:
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and
