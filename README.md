@@ -57,7 +57,7 @@ telemetry. After a one-time model download, Leafrune works fully offline.
 | System                             | Download                                                                                                                                   |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | macOS (Apple silicon: M1 or later) | **[Leafrune_0.9.5_aarch64.dmg](https://github.com/Sheldon1999/leafrune/releases/download/v0.9.5/Leafrune_0.9.5_aarch64.dmg)** (0.9.5 Beta) |
-| Windows 10 / 11 (64-bit)           | **[Microsoft Store](https://apps.microsoft.com/detail/9pd85b3k3t39)** (0.9.3 Beta)                                                         |
+| Windows 10 / 11 (64-bit)           | **[Microsoft Store](https://apps.microsoft.com/detail/9pd85b3k3t39)** (0.9.5 Beta)                                                         |
 
 Every Mac download is listed on the [Releases](https://github.com/Sheldon1999/leafrune/releases)
 page. To check that the DMG is complete and unchanged, compare its SHA-256 with
@@ -105,10 +105,10 @@ Leafrune can become your default PDF app: right-click any PDF ▸ **Open with** 
 
 - Leafrune opens straight away and you can start reading.
 - In the background it downloads its two AI models once from Hugging Face
-  (**about 3.2 GB** on a Mac, **about 531 MB** on Windows). Nothing is shown
-  unless you open the assistant, where you can follow the progress.
-- On a Mac, the first time you open the assistant, macOS prepares the graphics
-  processor for it. This takes about 20 seconds, once.
+  (**about 3.2 GB**). Nothing is shown unless you open the assistant, where
+  you can follow the progress.
+- The first time you open the assistant, the computer prepares its graphics
+  processor for it. On a Mac this takes about 20 seconds, once.
 - A dropped connection is no problem: the download continues where it stopped,
   even after a restart, and every file is checked before use.
 - After that, Leafrune never needs the internet again.
@@ -131,15 +131,27 @@ Leafrune can become your default PDF app: right-click any PDF ▸ **Open with** 
 - Links in a PDF open in your web browser or mail app.
 - Copy text, or right-click a page to **Copy Page as Image**.
 
-**Forms** (Mac, 0.9.5)
+**Forms**
 
 - Fill in text fields, checkboxes, radio buttons and drop-down lists.
-- **Save** (⌘S) writes the values into the same PDF; **Save a Copy…** (⇧⌘S)
-  writes them to a new file and leaves the original as it was. Other PDF apps
-  show the saved values.
+- **Save** (Ctrl+S, ⌘S on a Mac) writes the values into the same PDF; **Save
+  a Copy…** (Ctrl+Shift+S, ⇧⌘S) writes them to a new file and leaves the
+  original as it was. Other PDF apps show the saved values.
 - Unsaved changes show in the title. Closing, opening another PDF or quitting
   asks whether to save them.
 - PDFs that do not allow filling in show their fields read-only.
+
+**Printing**
+
+- The **Print** button, **File ▸ Print…** or Ctrl+P (⌘P on a Mac) open
+  Leafrune's Print window: printer or **Save as PDF**, copies, two-sided,
+  grayscale, page ranges (all, current, "1-3, 6", odd or even, reversed).
+- **Page Sizing & Handling** like Acrobat: fit, actual size or a custom scale;
+  **Poster** (one page across several sheets); **Multiple** pages per sheet;
+  **Booklet**.
+- A preview of every sheet. Filled-in form fields print, and pages print in
+  normal colors even with Invert on.
+- Leafrune remembers your choices for next time (except pages and copies).
 
 **Comfort**
 
@@ -167,9 +179,9 @@ Windows, or View ▸ Assistant.
 - **It shows what it is doing**: loading the model, searching, reading passages.
 - **Each document keeps its own conversation.** Copy an answer with the copy
   button; clear the conversation with the trash button.
-- **It reads filled-in forms** (Mac, 0.9.5). Ask _"What did I put as my last
-  name?"_ or _"What's still empty?"_; the answer links to the field. It sees
-  the values you have saved, so save (⌘S) after filling in.
+- **It reads filled-in forms.** Ask _"What did I put as my last name?"_ or
+  _"What's still empty?"_; the answer links to the field. It sees the values
+  you have saved, so save after filling in.
 
 When you open a PDF for the first time, Leafrune reads its text in the
 background (a long book takes a minute or two). You can keep reading meanwhile;
@@ -187,6 +199,8 @@ and the menus show every shortcut.
 | Action                           | Shortcut                                |
 | -------------------------------- | --------------------------------------- |
 | Open a PDF                       | Ctrl+O                                  |
+| Save / save a copy               | Ctrl+S / Ctrl+Shift+S                   |
+| Print                            | Ctrl+P                                  |
 | Reload / close the document      | Ctrl+R / Ctrl+W                         |
 | Find                             | Ctrl+F                                  |
 | Next / previous match            | Ctrl+G / Ctrl+Shift+G, or F3 / Shift+F3 |
@@ -207,14 +221,15 @@ and the menus show every shortcut.
 |        | macOS                                 | Windows                                  |
 | ------ | ------------------------------------- | ---------------------------------------- |
 | System | Mac with Apple silicon (M1 or later)  | Windows 10 or 11, 64-bit (x64) with AVX2 |
-| Disk   | about 3.5 GB free (app and AI models) | about 1 GB free (app and AI models)      |
+| Disk   | about 3.5 GB free (app and AI models) | about 3.5 GB free (app and AI models)    |
 | Memory | 8 GB recommended                      | 8 GB recommended                         |
 
 - Reading needs no more than an ordinary PDF viewer.
-- While the assistant answers, Leafrune uses more memory (about 2 GB on a Mac,
-  1 GB on Windows); it frees it again two minutes after your last question.
-- On a Mac the assistant runs on the built-in graphics processor; on Windows it
-  runs on the processor (no graphics card needed).
+- While the assistant answers, Leafrune uses more memory (about 2 GB on a
+  Mac); it frees it again two minutes after your last question.
+- On a Mac the assistant runs on the built-in graphics processor. On Windows
+  it uses the graphics card when its driver supports Vulkan (NVIDIA, AMD,
+  Intel), and otherwise the processor (no graphics card needed).
 
 ## Privacy
 
@@ -222,7 +237,7 @@ and the menus show every shortcut.
   answers.
 - The only network use is the one-time AI model download from Hugging Face.
 - No telemetry, analytics, crash reports, accounts or ads.
-- Your PDFs are never copied or modified.
+- Your PDFs are never copied, and changed only when you save a form in them.
 
 Details, and how to delete everything Leafrune stores, are in
 [PRIVACY.md](PRIVACY.md).
@@ -233,11 +248,9 @@ Details, and how to delete everything Leafrune stores, are in
   cannot answer questions about them: there is no text recognition (OCR) yet.
 - **The assistant works best in English.** Its search model was trained mainly
   on English text.
-- **Printing** is not available yet.
-- **Forms:** on Windows (0.9.3) you can type into form fields, but the values
-  are not saved yet. On a Mac, forms that run their own scripts (calculated
-  totals, checks) are filled in without them, signature fields are not
-  supported, and XFA forms can only be viewed.
+- **Forms** that run their own scripts (calculated totals, checks) are filled
+  in without them, signature fields are not supported, and XFA forms can only
+  be viewed.
 - **No annotations** (highlights, notes) yet.
 - **Mac:** Intel Macs are not supported yet. The beta is tested on macOS 27.
 - **Linux** is not supported in the beta.
@@ -278,9 +291,8 @@ published under an open-source license with version 2.0. See
 [LICENSE.md](LICENSE.md).
 
 Leafrune is built on open-source software and openly licensed AI models:
-Gemma 4 E2B by Google DeepMind (Mac, 0.9.5), Qwen3-0.6B by the Qwen team,
-Alibaba Cloud (Windows, 0.9.3), and snowflake-arctic-embed-s by Snowflake
-(both). Thank you to their authors. Credits and licenses:
+Gemma 4 E2B by Google DeepMind and snowflake-arctic-embed-s by Snowflake.
+Thank you to their authors. Credits and licenses:
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and
 [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt) (for the current version),
 also in the app under Help ▸ Open-Source Software.

@@ -44,7 +44,8 @@ Leafrune keeps its data in its application-data folder:
 - The database is a single file, `library.db`.
 - If it is ever found damaged, Leafrune sets it aside as
   `library.db.broken-<time>` and starts a new one; you can delete the old copy.
-- **Your PDF files are not copied or modified.**
+- **Your PDF files are not copied.** Leafrune changes a PDF only when you save
+  a form you filled in (File ▸ Save); Save a Copy… writes a new file instead.
 - **Passwords of protected PDFs are never stored.**
 
 To remove all Leafrune data, quit the app and delete its application-data

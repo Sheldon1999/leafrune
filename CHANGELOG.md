@@ -1,18 +1,36 @@
 # Changelog
 
-## 0.9.5 Beta — fill in and save forms (Mac)
+## 0.9.5 Beta — forms and printing (Mac and Windows)
+
+The same version on both systems: the Mac DMG here and the Microsoft Store
+build for Windows.
 
 **Forms**
 
 - Fill in text fields, checkboxes, radio buttons and drop-down lists, then
-  **File ▸ Save** (⌘S) or **File ▸ Save a Copy…** (⇧⌘S). The values are
-  written into the PDF, so other PDF apps show them too; password-protected
-  forms stay protected.
+  **File ▸ Save** (Ctrl+S, ⌘S on a Mac) or **File ▸ Save a Copy…**
+  (Ctrl+Shift+S, ⇧⌘S). The values are written into the PDF, so other PDF apps
+  show them too; password-protected forms stay protected.
 - Unsaved changes show in the title; closing, opening another PDF or quitting
   asks whether to save them.
 - PDFs that do not allow filling in show read-only fields.
 - The first time you open a fillable form, a short note explains that the
   assistant sees your values once you save (you can turn it off).
+
+**Printing**
+
+- A **Print** button, **File ▸ Print…** and Ctrl+P (⌘P) open Leafrune's
+  Print window, with the options people know from Acrobat: printer or Save as
+  PDF, copies, two-sided, grayscale, Save ink/toner, page ranges, odd or even
+  and reversed pages.
+- **Page Sizing & Handling:** Size (fit, actual size, shrink oversized pages,
+  custom scale), Poster, Multiple pages per sheet and Booklet; orientation,
+  paper size and print resolution.
+- A preview of every sheet. Pages print as shown (rotation, form values even
+  before saving), never with inverted colors.
+- The window remembers your choices for next time, except pages and copies.
+- Mac: **Printer Options…** opens the printer's own settings (presets, paper
+  type, tray).
 
 **Assistant**
 
@@ -20,12 +38,14 @@
   name?"_) or the whole form (_"What's still empty?"_, _"Is the form
   complete?"_). Answers link to the field and highlight it.
 - After a save, only the changed fields are read again.
+- Windows now uses the same AI model as the Mac (Gemma 4 E2B, a one-time
+  download of about 3.2 GB) and runs it on the graphics card when its driver
+  supports Vulkan, otherwise on the processor.
 
 **Known limitations**
 
 - Form scripts (calculated fields, checks) do not run; signature fields and
   XFA-only forms cannot be filled in.
-- Still no printing.
 
 ## 0.9.4 Beta — Leafrune for Mac (Apple silicon)
 
